@@ -1,0 +1,45 @@
+# Core framework
+fastapi==0.115.0
+uvicorn==0.32.0
+
+# Sentence embedding
+sentence-transformers==3.1.1
+transformers>=4.44.0
+numpy>=1.26.0
+
+# Qdrant vector database client
+qdrant-client>=1.7.0
+
+# MongoDB client
+pymongo>=4.6.0
+
+# HTTP requests
+requests>=2.32.0
+
+# Pydantic
+pydantic==2.8.2
+
+# CSV/Excel processing
+pandas>=2.0.0
+openpyxl>=3.1.0
+python-multipart>=0.0.6
+
+# PDF processing — pymupdf for layout-aware extraction (replaces pdfplumber as primary)
+pymupdf>=1.23.0        # fitz — layout-aware PDF parsing, section detection, faster
+pdfplumber>=0.10.0     # kept as fallback if pymupdf not available
+
+# Reranker — local cross-encoder, no API cost, ~50-100ms
+# Run: pip install flashrank
+flashrank>=0.0.4
+
+# Performance monitoring
+psutil>=5.9.0
+
+# System utilities
+python-dotenv>=1.0.0
+
+# Redis session (Upstash)
+redis>=5.0.0
+
+# Memory layer — Mem0 self-hosted + Qdrant
+mem0ai>=0.1.0

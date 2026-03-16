@@ -1,0 +1,29 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Environment / secrets
+.env
+**/.env
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+build/
+
+# Qdrant binary + data
+qdrant/
+storage/
+
+# SQLite data
+sqlite_data/
+*.db
+
+# Misc
+.DS_Store
+*.log
+Thumbs.db
